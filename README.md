@@ -10,7 +10,7 @@ The transition is very easy to implement:
     controller.modalPresentationCapturesStatusBarAppearance = true
     present(controller, animated: true, completion: nil)
     
-To update the height of the presented controller, simply:
+To update the height of the presented controller, write in the presented controller:
 
     if let presentationController = presentationController as? BDPresentationController {
         presentationController.updateHeight(600)
